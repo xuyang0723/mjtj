@@ -1,0 +1,54 @@
+<wxs module='filter' src="../../utils/filter.wxs"></wxs>
+<template name="listData">
+  <view class='hotCommentary_list_box_item'>
+    <view class='hotCommentary_list'>
+      <view class='hotCommentary_list_topBox'>
+      <navigator url='../mjDetail/index?cauthorid={{item.authorid}}'>
+        <image class='hotCommentary_list_logo' src='{{ item.authheadImlUrl }}'></image>
+        <view class='hotCommentary_list_info'>
+            <view class='hotCommentary_list_info_name'>{{item.authName}}</view>
+            <view class='hotCommentary_list_info_label'>
+                <image class='{{filter.classFun(item.authTag)}}' src='{{"../../libs/image/"+filter.classFun(item.authTag)+".png"}}'></image>
+                <text class='hotCommentary_list_info_label_result'>近{{item.allnum}}6中6{{item.hitmun}}</text>
+                <text class='hotCommentary_list_info_label_best' wx:if='{{ item.lznum >= 2}}'>{{item.lznum}}连红</text>
+            </view>
+        </view>
+        <view class='hotCommentary_list_resultData'>
+            <view class='hotCommentary_list_resultData_numberBox'>
+                <text class='hotCommentary_list_resultData_number'>{{item.profit}}</text>
+                <text class='hotCommentary_list_resultData_sup'>%</text>
+            </view>
+            <view class='hotCommentary_list_resultData_text'>命中率</view>
+        </view>
+      </navigator>
+      </view>
+      <view class='hotCommentary_list_centerBox'>
+        <navigator url='../jsDetail/index?planNo={{item.projid}}'>
+          <view class='hotCommentary_title'>
+              {{item.title}}
+          </view>
+          <view class='hotCommentary_content_box'>
+              <view 
+                class='hotCommentary_content_list' 
+                wx:for='{{item.matches}}'
+                wx:key='index'
+                wx:for-item='items'
+                >
+                
+                  <text class='hotCommentary_content_list_date'>{{filter.getMatcheTime(items.matchTime)}}</text>
+                  <text class='hotCommentary_content_list_belong'>{{items.leagueName}}</text>
+                  <text class='hotCommentary_content_list_teams'>{{items.homeTeam}}VS{{items.guestTeam}}</text>
+              </view>
+          </view>
+        </navigator>
+      </view>
+      <view class='hotCommentary_list_bottomBox'>
+          <view class='hotCommentary_list_bottomBox_state'>
+              <text class='hotCommentary_list_push'>{{filter.releaseTime(item)}}发布</text>
+              <text class='hotCommentary_list_state'>{{filter.typetxt(item.item.timeType)}}</text>
+          </view>
+          <text class='hotCommentary_list_price'>¥{{item.salepeice}}</text>
+      </view>
+    </view>
+  </view>
+</template>

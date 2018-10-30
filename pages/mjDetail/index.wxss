@@ -1,0 +1,249 @@
+.expert_info {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25rpx 26rpx; 
+    background-color: #fff;
+    box-shadow:0 7rpx 20rpx 0 rgba(226,226,226,0.41);
+}
+.expert_info_topBox {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 15rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_info_topBox_left {
+    display: flex;
+}
+.expert_info_logo {
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+}
+.expert_info_nameBox {
+    margin-left: 22rpx;
+}
+.expert_info_name {
+    font-size: 32rpx;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 14rpx;
+    display: block;
+}
+.expert_info_topBox_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.expert_focus_btnBox {
+    width:120rpx;
+    height:46rpx;
+    background:rgba(255,32,41,1);
+    border-radius:23rpx;
+    margin-bottom: 14rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expert_focus_btn {
+    font-size: 24rpx;
+    color: #fff;
+    line-height: 24rpx;
+}
+.expert_focus_number {
+    font-size: 22rpx;
+    color: #000;
+}
+.expert_info_bottomBox {
+    font-size: 28rpx;
+    line-height: 46rpx;
+    color: #000;
+}
+
+.expert_dataBox {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40rpx 24rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.expert_data_timeBox {
+    box-sizing: border-box;
+    width:290rpx;
+    height:60rpx;
+    margin-bottom: 34rpx;
+    padding: 6rpx;
+    border-radius:30rpx;
+    background:#E84025;
+    font-size: 26rpx;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_data_week {
+    width:152rpx;
+    height:50rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.red_dot {
+    display: inline-block;
+    width: 6rpx;
+    height: 6rpx;
+    background-color: #E93E45;
+    border-radius: 50%;
+}
+.expert_data_month {
+    width:152rpx;
+    height:50rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.expert_data_select {
+    background:rgba(255,255,255,1);
+    border-radius:25rpx;
+    color: #E84025;
+}
+.expert_data_detailBox {
+    width:702rpx;
+    height:120rpx;
+    background:rgba(255,255,255,1);
+    border-radius:6rpx;
+    box-shadow:0 1rpx 10rpx 0 rgba(215,215,215,0.46);
+    font-size: 24rpx;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+.expert_data_detail {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.vertical_line {
+    width:2rpx;
+    height:52rpx;
+    background:rgba(172,172,172,1);
+}
+.expert_data_detail_number {
+    padding-top: 10rpx;
+    font-size: 28rpx;
+    color: #E93E48;
+}
+.export_game_typeBox {
+    box-sizing: border-box;
+    width:442rpx;
+    height:60rpx;
+    background:#E84025;
+    border-radius:30rpx;
+    font-size: 26rpx;
+    margin: 0 auto 30rpx;
+    padding: 4rpx;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.export_game_type {
+    box-sizing: border-box;
+    width:150rpx;
+    height:50rpx;
+    border-radius:25rpx;
+    font-size: 26rpx;
+    padding: 0 8rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.export_game_type_select {
+    background-color: #fff;
+    color: #E84025;
+}
+
+.export_game_list {
+    margin: 0 24rpx;
+    padding: 24rpx;
+    background:rgba(255,255,255,1);
+    border-radius:10rpx;
+    box-shadow:0 1rpx 10rpx 0 rgba(215,215,215,0.32);
+    margin-bottom: 40rpx;
+}
+.expert_game_list_title {
+    color: #666;
+    font-size: 28rpx;
+    line-height: 40rpx;
+    margin-bottom: 24rpx;
+}
+.expert_game_list_planList {
+    background-color: #F8F8F8;
+    color: #8C8C8C;
+    font-size: 24rpx;
+    line-height: 44rpx;
+    padding: 0 14rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_game_list_status {
+    padding-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_game_list_date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_game_list_push {
+    color: #8C8C8C;
+    font-size: 22rpx;
+}
+.expert_game_list_time {
+    color: #8C8C8C;
+    font-size: 22rpx;
+    margin-left: 28rpx;
+}
+.expert_game_list_price {
+    color: #FF1C33;
+    font-size: 28rpx;
+}
+.export_game_list_isEnd {
+    margin: 0 24rpx;
+    padding: 24rpx;
+    background:rgba(255,255,255,1);
+    border-radius:10rpx;
+    box-shadow:0 1rpx 10rpx 0 rgba(215,215,215,0.32);
+    margin-bottom: 40rpx;
+    position: relative;
+}
+.expert_game_list_result {
+    width: 87rpx;
+    height: 82rpx;
+    position: absolute;
+    top: 10rpx;
+    right: 18rpx;
+}
+.expert_info_tag{
+    color: #E84025;
+    border-width: 1rpx;
+    border-style: solid;
+    border-color:#E84025;
+    display: inline-block;
+    margin-right: 20rpx;
+    font-size: 24rpx;
+    line-height: 28rpx;
+    box-sizing: border-box;
+    border-radius: 4rpx;
+    padding: 5rpx 10rpx;
+}
+@import "/templates/mjlists/index.wxss";

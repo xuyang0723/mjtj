@@ -1,0 +1,258 @@
+input{
+    font-size: 26rpx;
+}
+image{
+    max-width: 100%;
+    display: inline-block;
+}
+.wrap, .wrapper, .containter{
+    min-height: 100vh;
+}
+
+.default view, .default text{
+    font-family: 'Century Gothic';
+}
+.blackFashion view, .blackFashion text{
+    font-family: 'Sylfaen';
+}
+.containter{
+    color: #333;
+}
+.wrap{
+    background: #e5e5e5;
+}
+.placeholder{
+    color: #999;
+}
+.imgWidth{
+    width: 100%;
+}
+.tabbar{
+    padding-bottom: 100rpx;
+}
+.tabBar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 98rpx;
+    background: #100c0c;
+    color: rgba(255,255,255,.5);
+    font-size:22rpx;
+    border-top: 2rpx solid #434343;
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tabbar.iphX{
+    padding-bottom: 168rpx;
+}
+.tabBar.iphX{
+    padding-bottom: 68rpx;
+}
+.block{
+    display: block;
+}
+.red{
+    color: #b71818;
+}
+.gray{
+    color: #999;
+}
+.orange{
+    color: #ff6100;
+}
+.golden{
+    color: #a78954;
+}
+.end{
+    padding: 40rpx 0;
+    text-align: center;
+    color: #999;
+    font-size: 22rpx;
+    position: relative;
+}
+.end::before{
+    content: '';
+    width: 80%;
+    height: 2rpx;
+    background: #e5e5e5;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+.end text{
+    display: inline-block;
+    background: #fff;
+    padding: 10rpx 20rpx;
+    z-index:2;
+    position: relative;
+}
+.operation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operation button{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+}
+.operation button::after{
+    border: none;
+}
+.operation button.reduce{
+    border-right:none;
+    border-radius: 5px 0 0 5px;
+}
+.operation button.add{
+    border-left:none;
+    border-radius: 0 5px 5px 0;
+}
+.operation input{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    text-align: center;
+    display: inline-block;
+    font-size:28rpx;
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+.price{
+    color: #a78954;
+    font-size: 44rpx;
+    font-weight: bold;
+}
+.price .small{
+    font-size: 28rpx;
+    font-weight: normal;
+}
+.small{
+    font-size: 20rpx;
+    margin-right: 5rpx;
+}
+.video-box{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 1000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videoBox{
+    width: 100%;
+    height: 225px;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 50%;
+    margin-top: -115px;
+}
+.video{
+    width: 750rpx;
+    height: 225px;
+}
+.iconfont{
+    display: inline-block;
+}
+.iconfont::after{
+    font-family: icomoon !important;
+    vert-align: middle;
+}
+.icon-arror-right::after{
+    content: '\e913';
+    color: #999;
+    font-size: 24rpx;
+}
+.font-A::after{
+    content: '\e932';
+}
+.font-B::after{
+    content: '\e933';
+}
+.font-C::after{
+    content: '\e934';
+}
+.font-D::after{
+    content: '\e935';
+}
+.font-E::after{
+    content: '\e936';
+}
+.font-F::after{
+    content: '\e937';
+}
+.font-G::after{
+    content: '\e938';
+}
+.font-H::after{
+    content: '\e939';
+}
+.font-I::after{
+    content: '\e93a';
+}
+.font-J::after{
+    content: '\e93b';
+}
+.font-K::after{
+    content: '\e93c';
+}
+.font-L::after{
+    content: '\e93d';
+}
+.font-M::after{
+    content: '\e93e';
+}
+.font-N::after{
+    content: '\e93f';
+}
+.font-O::after{
+    content: '\e940';
+}
+.font-P::after{
+    content: '\e941';
+}
+.font-Q::after{
+    content: '\e942';
+}
+.font-R::after{
+    content: '\e943';
+}
+.font-S::after{
+    content: '\e944';
+}
+.font-T::after{
+    content: '\e945';
+}
+.font-U::after{
+    content: '\e946';
+}
+.font-V::after{
+    content: '\e947';
+}
+.font-W::after{
+    content: '\e948';
+}
+.font-X::after{
+    content: '\e949';
+}
+.font-Y::after{
+    content: '\e94a';
+}
+.font-Z::after{
+    content: '\e94b';
+}
+

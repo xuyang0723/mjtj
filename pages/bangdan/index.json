@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "名家榜单",
+  "usingComponents": {
+       "bangdan-list": "/components/bangdan/index"
+    }
+}

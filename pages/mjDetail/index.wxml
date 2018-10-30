@@ -1,0 +1,92 @@
+<!--pages/export/expert.wxml-->
+<import src="/templates/mjlists/index.wxml"/>
+<view class='expert_info'>
+    <view class='expert_info_topBox'>
+        <view class='expert_info_topBox_left'>
+            <image class='expert_info_logo' src='{{userInfo.imgUrl}}'></image>
+            <view class='expert_info_nameBox'>
+                <text class='expert_info_name'>{{userInfo.name}}</text>
+                <text class='expert_info_tag'>{{userInfo.authTag}}</text>
+            </view>
+        </view>
+        <!-- <view class='expert_info_topBox_right'>
+            <view class='expert_focus_btnBox'>
+                <text class='expert_focus_btn'>关注</text>
+            </view>
+            <text class='expert_focus_number'>2000人关注</text>
+        </view> -->
+    </view>
+    <view class='expert_info_bottomBox'>
+        {{userInfo.mess}}
+    </view>
+</view>
+<view class='expert_dataBox'>
+    <view class='expert_data_timeBox'>
+        <view 
+            class='{{currentNav==0?"expert_data_week expert_data_select":"expert_data_week"}}' 
+            bindtap="handleChangFristNav"
+            data-idx='0'
+        >
+            <text class='red_dot'></text>
+            <text class='expert_data_week_text'>近7天</text>
+            <text class='red_dot'></text>
+        </view>
+        <view 
+            class='{{currentNav==1?"expert_data_week expert_data_select":"expert_data_week"}}' 
+            bindtap="handleChangFristNav"
+            data-idx='1'
+        >
+            <text class='red_dot'></text>
+            <text class='expert_data_month_text'>近30天</text>
+            <text class='red_dot'></text>
+        </view>
+    </view>
+    <view class='expert_data_detailBox'>
+        <view class='expert_data_detail'>
+            <text>方案</text>
+            <text class='expert_data_detail_number'>{{currentNavData.allnum}}个</text>
+        </view>
+        <view class='vertical_line'></view>
+        <view class='expert_data_detail'>
+            <text>状态</text>
+            <text class='expert_data_detail_number'>近{{currentNavData.allnum}}中{{currentNavData.hitnum}}</text>
+        </view>
+        <view class='vertical_line'></view>
+        <view class='expert_data_detail'>
+            <text>当前连红</text>
+            <text class='expert_data_detail_number'>{{currentNavData.lznum}}连红</text>
+        </view>
+        <view class='vertical_line'></view>
+        <view class='expert_data_detail'>
+            <text>命中率</text>
+            <text class='expert_data_detail_number'>{{currentNavData.profit}}%</text>
+        </view>
+    </view>
+</view>
+<view class='expert_game_listBox'>
+    <view class='export_game_typeBox'>
+        <view class='{{currentStatue==1?"export_game_type export_game_type_select":"export_game_type"}}' data-type='1' bindtap='handleChangSecondNav'>
+            <text class='red_dot'></text>
+            <text>推荐中</text>
+            <text class='red_dot'></text>
+        </view>
+        <view class='{{currentStatue==2?"export_game_type export_game_type_select":"export_game_type"}}' data-type='2' bindtap='handleChangSecondNav'>
+            <text class='red_dot'></text>
+            <text>比赛中</text>
+            <text class='red_dot'></text>
+        </view>
+        <view class='{{currentStatue==3?"export_game_type export_game_type_select":"export_game_type"}}' data-type='3' bindtap='handleChangSecondNav'>
+            <text class='red_dot'></text>
+            <text>已结束</text>
+            <text class='red_dot'></text>
+        </view>
+    </view>
+    
+    <block wx:if="{{planList.length != 0}}">
+        <template wx:for="{{planList}}" wx:key='index' wx:for-item='item' is="mjlistData" data='{{ item,currentStatue,buytime}}'></template>
+    </block>
+    <block wx:if='{{planList.length == 0}}'>
+        <view class='nodata'><image src='../../libs/image/nodata.png'></image></view>
+    </block>
+    
+</view>

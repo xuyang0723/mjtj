@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="format-detection" content="telephone=no">
+		<title>名家解说-解说详情</title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+		<link rel="stylesheet" type="text/css" href="css/js-detail.css">
+	</head>
+	<body>
+		<div class="topbg">
+			<nav class="top">
+				<span class="back" id="back"><span></span></span>
+			</nav>
+			<section class="top-info">
+				<div class="top-info-top">
+					<div class="img-txt">
+						<img src="" alt="" id="userImg">
+					</div>
+					<div class="txt">
+						<h3 id="authName"></h3>
+						<p class="tit-list">
+							<span class="Ticon" id="authTag"></span>
+						</p>
+					</div>
+				</div>
+				<p class="top-info-foot-mess" id="authdescription"></p>
+			</section>
+		</div>
+		<p class="tac" id="chekMore"><span><i>查看更多</i><font></font></span><img src="./images/mjbg.jpg"></p>
+		<section class="main">
+			<h3 class="main-tit" id="plantitle"></h3>
+			<p class="main-info-box">
+				<font id="plansummary"></font>
+			</p>
+		</section>
+		<div class="lists1"id="list1">
+			<!-- <ul>
+				<li class="list1s">
+					<div class="listTit topbg">
+						<span>世界杯</span>
+						<span>2018-07-04 22:50</span>
+						<span>世界杯</span>
+					</div>
+					<div class="list-box">
+						<span>索尔纳</span>
+						<img src="http://l.aicaicdn.com//images/pages/leaguelib/team_logo/tm_logo_400.png">
+						<span class="vs-font">vs</span>
+						<img src="http://l.aicaicdn.com//images/pages/leaguelib/team_logo/tm_logo_231.png">
+						<span>北西兰</span>
+					</div>
+					<div class="plan-type">
+						<div class="listTit topbg">
+							<span>玩法推荐</span>
+						</div>
+						<ul class="clearfloat aa"><li><p class="lh38">大小球</p></li><li class="no" style="width: 37.5%;"><p>大</p><span>[1.00]</span></li><li class="hover" style="width: 37.5%;"><p>小</p><span>[0.80]</span></li><span class="aa"></span></ul>
+					</div>
+				</li>
+			</ul> -->
+		</div>
+		<div class="lists2" style="display: none;" id="list2">
+			<table>
+				<tr>
+					<th>场次</th>
+				</tr>
+				<tr>
+					<td>主</td>
+				</tr>
+				<tr class="color_red">
+					<td>推荐</td>
+				</tr>
+				<tr>
+					<td>客</td>
+				</tr>
+			</table>
+		</div>
+		<div class="listTit topbg">
+			<span>推荐理由</span>
+		</div>
+		<div class="hide p20" id="plandescription"></div>
+		<section class="buy-stuta" id="buyStuta">
+			<div class="bg">
+				<p>支付后显示方案及理由</p>
+				<div class="text-c">距可支付截止：<span id="days">--天</span><span id="house">--</span>:<span id="minute">--</span>:<span id="second">--</span></div>
+				<p>观点建议仅供参考</p>
+			</div>
+			<div class="foot">
+				<p>仅需<span><font class="salepeice">--</font>元</span></p>
+				<a href="javascript:;" class="pay-btn" id="payBtn">立即支付</a>
+			</div>
+		</section>
+		<!--支付方式-->
+		<div class="zfStyle" style="display: none;">
+			<div class="zfStyleCon" >
+				<h3>选择支付方式</h3>
+				<ul id="zfStyle">
+				</ul>
+				<a href="javascript:;" target="_blank" class="zfBtn" id="zfBtn">确认支付<span class="salepeice"></span></a>
+			</div>
+			
+		</div>
+		<!--支付tkbox-->
+		<div class="tkbox" id="tkbox" style="display: none;">
+			<div class="tkcom">
+				<p>您将支付<span class="salepeice"></span>元查看解读详情</p>
+				<div class="btns">
+					<a href="javascript:;" class="no-btn" id="noBtn">取消</a>
+					<a href="javascript:;" class="yes-btn" id="yesBtn" style="cursor: pointer;">确认</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var isApp = -1;
+			// 判断是不是App
+			function func(num) {
+				isApp = num * 1;
+			}
+			function action(type, url) {
+			};	
+		</script>
+		
+	</body>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/159cp.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/layout.js"></script>
+	<script src="js/js-detail.js?a=1123"></script>
+</html>

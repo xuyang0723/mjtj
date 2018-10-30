@@ -1,0 +1,157 @@
+.hotCommentary_list_box_item {
+    margin-bottom: 24rpx;
+}
+
+.hotCommentary_list {
+    box-sizing: border-box;
+    width: 702rpx;
+    background-color: #fff;
+    margin: 0 24rpx;
+    padding: 24rpx;
+    border-radius:10rpx;
+    box-shadow:0 1rpx 20rpx 0 rgba(215,215,215,0.32);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hotCommentary_list_topBox navigator{
+    box-sizing: border-box;
+    width: 100%;
+    height: 98rpx;
+    margin-bottom: 24rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hotCommentary_list_logo {
+    width: 84rpx;
+    height: 84rpx;
+    border-radius: 50%;
+}
+.hotCommentary_list_resultData {
+    width: 84rpx;
+    height: 84rpx;
+    text-align: right;
+}
+.hotCommentary_list_resultData_number {
+    font-size: 44rpx;
+    color: #FF1A31;
+}
+.hotCommentary_list_resultData_sup {
+    font-size: 18rpx;
+    color: #FF1A31;
+    vertical-align: text-top;
+}
+.hotCommentary_list_resultData_text {
+    font-size: 20rpx;
+    color: #FF1A31;
+}
+.hotCommentary_list_info {
+    box-sizing: border-box;
+    flex: 1;
+    height:80%;
+    padding-left: 16rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hotCommentary_list_info_name {
+    font-size: 30rpx;
+    color: #333; 
+}
+.hotCommentary_list_info_label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.hotCommentary_list_info_label_result {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 4rpx;
+    font-size: 22rpx;
+    color: #CC6F16;
+    border: 1rpx solid #CC6F16;
+    border-radius: 6rpx;
+    margin-left: 8rpx; 
+}
+.hotCommentary_list_info_label_best {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 2rpx 8rpx;
+    font-size: 22rpx;
+    color: #fff;
+    background-color: #FF1D19;
+    border-radius: 6rpx;
+    margin-left: 8rpx; 
+}
+.hotCommentary_title {
+    font-size: 28rpx;
+    color: #666;
+    margin-bottom: 24rpx;
+}
+.hotCommentary_list_centerBox {
+    margin-bottom: 10rpx;
+}
+.hotCommentary_content_list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24rpx;
+    color: #8C8C8C;
+    background-color: #F8F8F8;
+    line-height: 46rpx;
+    border-radius: 4rpx;
+    margin-bottom: 5rpx;
+}
+.hotCommentary_content_list_date {
+    margin-left: 14rpx;
+}
+.hotCommentary_content_list_teams {
+    margin-right: 20rpx;
+}
+.hotCommentary_list_bottomBox {
+    display: flex;
+    justify-content: space-between;
+}
+.hotCommentary_list_bottomBox {
+    display: flex;
+    align-items: center;
+}
+.hotCommentary_list_push {
+    font-size: 22rpx;
+    color: #8C8C8C;
+}
+.hotCommentary_list_state {
+    font-size: 20rpx;
+    color: #999;
+    margin-left: 28rpx;
+}
+.hotCommentary_list_price {
+    font-size: 28rpx;
+    color: #FF1C33;
+}
+
+.cpfxs {
+    width: 164rpx;
+    height: 32rpx;
+}
+.mtmj {
+    width: 134rpx;
+    height: 32rpx;
+}
+.sqmr {
+    width: 134rpx;
+    height: 32rpx;
+}
+.TVdk {
+    width: 118rpx;
+    height: 32rpx;
+}
+.zqmj {
+    width: 134rpx;
+    height: 32rpx;
+} 
+.zywj {
+    width: 134rpx;
+    height: 32rpx;
+} 

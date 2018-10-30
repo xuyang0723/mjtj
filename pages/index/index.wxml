@@ -1,0 +1,121 @@
+<!--index.wxml-->
+<wxs module='filter' src="../../utils/filter.wxs"></wxs>
+<import src="/templates/lists/index.wxml"/>
+<view class='index_container'>
+    <!-- top swiper -->
+    <swiper class='swiper' interval='3000' circular='true'>
+        <swiper-item 
+            wx:for="{{sportList}}" 
+            wx:key="index" 
+            wx:for-item="item"
+            class='swiper_item'>
+            <navigator url='../pageLists/index?playType={{item.playType}}&itemid={{item.itemid}}'>
+                <view class='swiper_item_box'>
+                    <view class='swiper_item_box_left'>
+                        <view class='swiper_leftBox_top_date'>
+                            <text>{{ item.matchname }}</text>
+                            <text>{{ item.formatTime}}</text>
+                        </view>
+                        <view class='swiper_leftBox_center_team'>
+                            <view class='swiper_leftBox_center_team_item'>
+                                <image src='{{ item.homeTeamIcon }}' class='swiper_leftBox_center_team_item_logo'></image>
+                                <text class='swiper_leftBox_center_team_item_name'>{{ item.mname}}</text>
+                            </view>
+                            <view class='swiper_vs'>VS</view>
+                            <view class='swiper_leftBox_center_team_item'>
+                                <image src='{{ item.guestTeamIcon }}' class='swiper_leftBox_center_team_item_logo'></image>
+                                <text class='swiper_leftBox_center_team_item_name'>{{ item.sname }}</text>
+                            </view>
+                        </view>
+                        <view class='swiper_leftBox_bottom_odds'>
+                            <text class='swiper_leftBox_bottom_odds_text'>胜{{filter.stringFun(item.spf,0)}}</text>
+                            <text class='swiper_leftBox_bottom_odds_text'>平{{filter.stringFun(item.spf,1)}}</text>
+                            <text class='swiper_leftBox_bottom_odds_text'>负{{filter.stringFun(item.spf,2)}}</text>
+                        </view>
+                    </view>
+                    <view class='swiper_line'></view>
+                    <view class='swiper_item_box_right'>
+                        <view class='swiper_rightBox_top'>
+                            <block wx:for="{{filter.stringFun(item.headImages,'[]')}}" wx:key='index' wx:for-item='item'>
+                                <image class='swiper_experts_img' src='{{item}}'></image>
+                            </block>
+                        </view>
+                        <view class='swiper_rightBox_center_number'>{{item.explans}}</view>
+                        <view class='swiper_rightBox_center_text'>专家解读</view>
+                        <view class='swiper_rightBox_bottom'>{{index + 1}}/{{sportList.length}}</view>
+                    </view>
+                </view> 
+            </navigator>
+        </swiper-item>  
+    </swiper>
+    <!-- hot expert -->
+    <view class='hotExpert_box'>
+        <view class='hotExpert_logo_box'>
+            <image class='hotExpert_logo' src='../../libs/image/hotExpert.png'></image>
+        </view>
+        <view class='hotExpert'>
+            <navigator 
+                wx:for="{{expertList}}"
+                wx:key='index' 
+                wx:for-item='item'
+                url='../mjDetail/index?cauthorid={{item.cauthorid}}'
+                >
+                <view class='hotExpert_item'>
+                    <image class='hotExpert_item_img' src='{{item.authheadImlUrl}}'></image>
+                    <view class='hotExpert_item_info'>
+                        <text class='hotExpert_item_name'>{{item.authName}}</text>
+                        <text class='hotExpert_item_hit'>近{{item.allnum}}中{{item.hitnum}}</text>
+                        <view class='hotExpert_item_sell'>
+                            <text class='hotExpert_item_sell_text'>在售：</text>
+                            <text class='hotExpert_item_sell_number'>{{item.explans}}</text>
+                        </view>
+                    </view>
+                </view>
+            </navigator>
+            <view class='moreExpert'>
+                <navigator url="../bangdan/index">
+                    <image class='moreExpert_img' src='../../libs/image/moreExpert.png'></image>
+                    <text>更多</text>
+                </navigator>
+            </view>
+        </view>
+    </view>
+    <!-- hot commentary-->
+    <view class='hotCommentary_box'>
+        <view class='hotCommentary_logo_box'>
+            <image class='hotCommentary_logo' src='../../libs/image/hotCommentary.png'></image>
+        </view>
+        <view class='hotCommentary_type_box'>
+            <block wx:for="{{PlanListNav}}" wx:for-item="item" wx:key="index">
+                <view class='hotCommentary_type_list' data-type='{{item.name}}' data-index='{{index}}' bindtap='getPlanList'>
+                    <text class='hotCommentary_type_list_text'>{{item.type}}</text>
+                    <text class="{{index==currentPlanListNav? 'hotCommentary_type_list_underLine' : ''}}"></text>
+                </view>
+            </block>
+        </view>
+        <view class='hotCommentary_list_box'>
+            <template wx:for="{{planList}}" wx:key='index' wx:for-item='item' is="listData" data='{{ item }}'></template>
+        </view>
+        <view class='hotCommentary_more'>
+            <navigator url='../jieshuo/index'>
+                <text class='hotCommentary_more_btn'>查看更多</text>
+            </navigator>
+           
+        </view>
+    </view>
+
+    <!--footer nav-->
+    <view class="footer-nav">
+        <view class="footer-navs hover">
+            <image src='../../libs/image/indexSelectPath.png'></image>
+            <text>主页</text>
+        </view>
+        <view bindtap="handlToUrl">
+            <view class="footer-navs">
+                <image src='../../libs/image/personalPath.png'></image>
+                <text>我的方案</text>
+            </view>
+        </view>
+    </view>
+
+</view>

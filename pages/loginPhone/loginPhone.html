@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="format-detection" content="telephone=no">
+    <title>登录</title>
+    <script type="text/javascript">
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+        window.onresize = function () {
+            document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+        }
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mjjsLogin.css">
+</head>
+
+<body>
+    <div class="showTip">手机号码格式错误</div>
+    <header class="header">
+        <span class="back"></span>
+    </header>
+    <section class="page_login_inputPhone">
+        <div class="page_title">登录注册更精彩</div>
+        <div class="page_tip">加入彩虹，祝君连红</div>
+        <input type="number" name="phone" placeholder="请输入您的11位手机号" autocomplete="on" style="display:none;">
+        <input type="number" name="phone" id="login_inputPhone" oninput="inputPhone()" placeholder="请输入您的11位手机号" autocomplete="off">
+        <div class="page_login_inputPhone_next">下一步</div>
+        <div class="justLook">随便看看</div>
+        <div class="agree">使用即代表您同意遵守用户协议</div>
+    </section>
+</body>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/loginPhone.js"></script>
+</html>

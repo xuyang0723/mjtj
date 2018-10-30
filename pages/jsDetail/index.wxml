@@ -1,0 +1,135 @@
+<!--index.wxml-->
+<view>
+   	<view class='expert_info'>
+	    <view class='expert_info_topBox'>
+	        <view class='expert_info_topBox_left'>
+	            <image class='expert_info_logo' src='{{userInfo.imgUrl}}'></image>
+	            <view class='expert_info_nameBox'>
+	                <text class='expert_info_name'>{{userInfo.name}}</text>
+	                <text class='expert_info_tag'>{{userInfo.authTag}}</text>
+	            </view>
+	        </view>
+	        <!-- <view class='expert_info_topBox_right'>
+	            <view class='expert_focus_btnBox'>
+	                <text class='expert_focus_btn'>关注</text>
+	            </view>
+	            <text class='expert_focus_number'>2000人关注</text>
+	        </view> -->
+	    </view>
+	    <view class='expert_info_bottomBox'>
+	        {{userInfo.mess}}
+	    </view>
+	</view>
+	<view class='expert_title'>
+	    <text class='expert_title_H2'>昨晚2中2！再送波胆分析！</text>
+	    <text class='expert_title_mess'>瑞典在小组赛最后一轮完成自我救赎，3-0大胜墨西哥，成功晋级到淘汰赛，这场比赛中瑞典队打的很有气势，利用队员身高优势压制对手，在禁区外远射，这增加了出现意外的可能性。</text>
+	</view>
+	<view class="expert_main">
+		<view class="lists1" id="list1">
+			<view class="list1s">
+				<view class="listTit">
+					<text class="border_rigth">世界杯</text>
+					<text class="border_rigth">2018-07-04 22:50</text>
+					<text>未开赛</text>
+				</view>
+				<view class="list-box">
+					<view class="team_box">
+						<image src="http://l.aicaicdn.com//images/pages/leaguelib/team_logo/tm_logo_400.png"></image>
+						<text>索尔纳</text>
+					</view>
+					
+					
+					<text class="vs-font">vs</text>
+					<view class="team_box">
+						<image src="http://l.aicaicdn.com//images/pages/leaguelib/team_logo/tm_logo_400.png"></image>
+						<text>索尔纳</text>
+					</view>
+				</view>
+				<view class="plan-type">
+					<view class="plans_ul">
+						<view class="plans_li lh38"><text class="plans_p">大小球</text><text class="plans_p">大小球</text></view>
+						<view class="plans_li no" style="width: 37.5%;"><text class="plans_p">大</text><text>[1.00]</text></view>
+						<view class="plans_li plans_li_hover" style="width: 37.5%;"><text class="plans_p">小</text><text>[0.80]</text></view>
+						<text class="aa"></text>
+					</view>
+				</view>
+			</view>
+			<view class="list1s">
+				<view class="listTit">
+					<text class="border_rigth">世界杯</text>
+					<text class="border_rigth">2018-07-04 22:50</text>
+					<text>未开赛</text>
+				</view>
+				<view class="list-box">
+					<view class="team_box">
+						<image src="http://l.aicaicdn.com//images/pages/leaguelib/team_logo/tm_logo_400.png"></image>
+						<text>索尔纳</text>
+					</view>
+					
+					
+					<text class="vs-font">vs</text>
+					<view class="team_box">
+						<image src="http://l.aicaicdn.com//images/pages/leaguelib/team_logo/tm_logo_400.png"></image>
+						<text>索尔纳</text>
+					</view>
+				</view>
+				<view class="plan-type">
+					<view class="plans_ul">
+						<view class="plans_li"><text class="plans_p">大小球</text></view>
+						<view class="plans_li no" style="width: 37.5%;"><text class="plans_p">大</text><text>[1.00]</text></view>
+						<view class="plans_li plans_li_hover" style="width: 37.5%;"><text class="plans_p">小</text><text>[0.80]</text></view>
+						<text class="aa"></text>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="lists2" style="" id="list2">
+			<view class="table">
+					<view class="tr th">
+						<text class="th_text">场次</text>
+						<text>01</text>
+						<text>02</text>
+						<text>03</text>
+						<text>04</text>
+						<text>05</text>
+						<text>06</text>
+						<text>07</text>
+						<text>08</text>
+						<text>09</text>
+						<text>10</text>
+						<text>11</text>
+						<text>12</text>
+						<text>13</text>
+						<text>14</text>
+					</view>
+					<view class="tr">
+						<text class="th_text"><text class="th_text_txt">主</text></text>
+						<text>谢周三</text><text>法兰克</text><text>桑德豪</text><text>德累斯</text><text>塞尔塔</text><text>里 昂</text><text>阿雅克</text><text>南 锡</text><text>克莱蒙</text><text>梅 斯</text><text>巴黎FC</text><text>奥兰斯</text><text>特鲁瓦</text><text>欧塞尔</text>
+					</view>
+					<view class="tr color_red">
+						<text class="th_text">推荐</text>
+						<text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text><text>-</text>
+					</view>
+					<view class="tr">
+						<text class="th_text"><text class="th_text_txt">客</text></text>
+						<text>米德尔</text><text>杜塞尔</text><text>因戈尔</text><text>奥 厄</text><text>阿拉维</text><text>尼 姆</text><text>阿弗尔</text><text>格勒诺</text><text>红 星</text><text>尼奥特</text><text>沙托鲁</text><text>瓦朗谢</text><text>索 肖</text><text>贝兹尔</text>
+					</view>
+			</view>
+		</view>
+		<view class='hotDetail_tit'>
+            <image class='hotDetail_tit_img' src='../../libs/image/hotextetail.png'></image>
+        </view>
+
+        <view class="buy-stuta" id="buyStuta">
+			<view class="bg">
+				<text class="bg_p">支付后显示方案及理由</text>
+				<view class="text-c">距可支付截止：<text id="days">--天</text><text id="house">--</text>:<text id="minute">--</text>:<text id="second">--</text></view>
+				<text class="bg_p">观点建议仅供参考</text>
+			</view>
+			<view class="foot">
+				<view class="foot_text">仅需<text class="foot_p">￥<text class="salepeice">66</text></text></view>
+				<view class="pay-btn" id="payBtn">立即支付</view>
+			</view>
+		</view>
+	</view>
+</view>

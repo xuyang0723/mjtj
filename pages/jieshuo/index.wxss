@@ -1,0 +1,62 @@
+.header_box {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0rpx;
+    z-index: 600;
+    width: 100%;
+    height: 150rpx;
+    background:#F7F7F7;
+    color: #333;
+    font-size: 28rpx;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_header_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 72rpx;
+    background:#fff;
+    color: #333;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_header_title {
+    height: 100%;
+    font-size: 28rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_header_box_name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 72rpx;
+    background:#fff;
+    color: #333;
+    font-size: 28rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_header_title_name {
+    height: 100%;
+    font-size: 28rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_header_title_text{
+  padding-top:12rpx;
+}
+.lists{
+  padding-top: 170rpx;
+}
+@import "/templates/lists/index.wxss";

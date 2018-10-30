@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view>
+   <view class="main_header_box">
+   		<view class="main_header_title" bindtap='handlChangeNav' data-type="all">
+            <view class="main_header_title_text">全部</view>
+            <view class='{{currentType == "all"?"redLine redLine_choose":"redLine"}}'></view>
+        </view>
+        <view class="main_header_title" bindtap='handlChangeNav' data-type="hit">
+            <view class="main_header_title_text">命中榜</view>
+            <view class='{{currentType == "hit"?"redLine redLine_choose":"redLine"}}'></view>
+        </view>
+        <view class="main_header_title" bindtap='handlChangeNav' data-type="lznum">
+            <view class="main_header_title_text">连红榜</view>
+            <view class='{{currentType == "lznum"?"redLine redLine_choose":"redLine"}}'></view>
+        </view>
+        <view class="main_header_title" bindtap='handlChangeNav' data-type="attention">
+            <view class="main_header_title_text">关注</view>
+            <view class='{{currentType == "attention"?"redLine redLine_choose":"redLine"}}'></view>
+        </view>
+    </view>
+    <view class="main_mzb">
+    	<block wx:if='{{list.length == 0}}'>
+    		<view class="noData_mzb"></view>
+    	</block>
+    	<block wx:if='{{list.length > 0}}'>
+    		<view class="main_ul_all">
+    			<block
+					wx:for='{{list}}'
+      				wx:key='index'
+      				wx:for-item='item'
+    			>
+    				<bangdan-list _type='{{currentType}}' _index='{{index}}' _item='{{item}}'></bangdan-list>
+    			</block>
+    			
+    		</view>
+    	</block>
+    </view>
+</view>

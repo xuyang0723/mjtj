@@ -1,0 +1,100 @@
+.weather{
+  color: #999;
+  font-size: 28rpx;
+  margin-top: 16rpx;
+  line-height: 100%;
+}
+.weather .iconfont{
+  vertical-align: middle;
+  font-family: icomoon;
+}
+.weather .iconfont::before{
+  font-size: 44rpx;
+}
+/* 晴 */
+.sunny::before{
+  content: '\e922';
+}
+/* 多云 */
+.cloudy::before{
+  content: '\e923';
+}
+/* 雨 */
+.rain::before{
+  content: '\e928';
+}
+/* 阴 */
+.overcast::before{
+  content: '\e926';
+}
+/* 雪 */
+.snow::before{
+  content: '\e925';
+}
+/* 雷电 */
+.electric::before{
+  content: '\e92e';
+}
+/* 霾 */
+.haze::before{
+  content: '\e927';
+}
+/* 雾 */
+.fog::before{
+  content: '\e924';
+}
+/* 风 */
+.windy::before{
+  content: '\e92d';
+}
+.weather .small{
+  position: relative;
+  width: 30rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+.weather .small::after{
+  content:'℃';
+  position: absolute;
+  font-size: 20rpx;
+  top: 0;
+  left: 0;
+}
+
+.weather-box{
+  display: block;
+}
+.weather-box.temp{
+  font-size: 36rpx;
+  color: #575757;
+  font-weight: bold;
+  margin:0 20rpx 0 50rpx;
+}
+.weather-box.city{
+  font-size:20rpx;
+  align-items: center;
+}
+.simpleStyle .weather,
+.blackFashion .weather{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.blackFashion .weather-box.temp{
+  margin-left: 0;
+}
+.weather_right{
+  position: absolute;
+  right: 20rpx;
+  text-align: center;
+}
+.weather.weather_right .iconfont::before{
+  font-size: 60rpx;
+}
+.happyLemon .weather{
+  color: #fff;
+}
+.happyLemon .weather-box.temp{
+  color: #fff;
+}

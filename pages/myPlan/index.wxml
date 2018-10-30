@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<import src="/templates/mjlists/index.wxml"/>
+<view>
+	<view class='expert_data_timeBox'>
+        <view 
+            class='{{Type=="70"?"expert_data_week expert_data_select":"expert_data_week"}}' 
+            bindtap="handleChangType"
+            data-type='70'
+        >
+            <text class='red_dot'></text>
+            <text class='expert_data_week_text'>足球</text>
+            <text class='red_dot'></text>
+        </view>
+        <view 
+            class='{{Type=="71"?"expert_data_week expert_data_select":"expert_data_week"}}' 
+            bindtap="handleChangType"
+            data-type='71'
+        >
+            <text class='red_dot'></text>
+            <text class='expert_data_month_text'>篮球</text>
+            <text class='red_dot'></text>
+        </view>
+    </view>
+   	<view class="main_header_box">
+        <view class="main_header_title" bindtap='handlChangeNavType' data-type="1">
+            <view class="main_header_title_text">未开赛</view>
+            <view class='{{navType == "1"?"redLine redLine_choose":"redLine"}}'></view>
+        </view>
+        <view class="main_header_title" bindtap='handlChangeNavType' data-type="2">
+            <view class="main_header_title_text">比赛中</view>
+            <view class='{{navType == "2"?"redLine redLine_choose":"redLine"}}'></view>
+        </view>
+        <view class="main_header_title" bindtap='handlChangeNavType' data-type="3">
+            <view class="main_header_title_text">已完赛</view>
+            <view class='{{navType == "3"?"redLine redLine_choose":"redLine"}}'></view>
+        </view>
+    </view>
+    <view class="list-main">
+    	<block wx:if='{{planList.length == 0}}'>
+	        <view class='nodata'><image src='../../libs/image/nodata.png'></image></view>
+	    </block>
+	    <block wx:if='{{planList.length > 0}}'>
+	    	<template wx:for="{{planList}}" wx:key='index' wx:for-item='item' is="mjlistData" data='{{ item,buytime }}'></template>
+	    </block>
+    </view>
+</view>

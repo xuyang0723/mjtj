@@ -1,0 +1,35 @@
+
+.head-con{
+    padding: 60rpx;
+    display: flex;
+    justify-content:space-around;
+}
+.head-con-l image,.head-con-r image{
+  display: block;
+    width: 122rpx;
+    height: 122rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    border:2rpx #fff solid;
+    margin: auto;
+}
+.head-con-l text,.head-con-r text{
+    display: block;
+    padding-top: 20rpx;
+    font-size: 32rpx;
+    color: #393131;
+    text-align: center;
+}
+.head-con-c{
+    text-align: center;
+    padding: 20rpx 0 0;
+}
+.head-con-c text{
+    font-size: 32rpx;
+    color: #393131;
+}
+.head-con-c .PageListsVs{
+  font-size: 50rpx;
+  display: block
+}
+@import "/templates/lists/index.wxss";

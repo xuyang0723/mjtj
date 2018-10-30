@@ -1,0 +1,316 @@
+.expert_info {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25rpx 26rpx; 
+    background-color: #fff;
+    box-shadow:0 7rpx 20rpx 0 rgba(226,226,226,0.41);
+}
+.expert_info_topBox {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 15rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expert_info_topBox_left {
+    display: flex;
+}
+.expert_info_logo {
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+}
+.expert_info_nameBox {
+    margin-left: 22rpx;
+}
+.expert_info_name {
+    font-size: 32rpx;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 14rpx;
+    display: block;
+}
+.expert_info_topBox_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.expert_focus_btnBox {
+    width:120rpx;
+    height:46rpx;
+    background:rgba(255,32,41,1);
+    border-radius:23rpx;
+    margin-bottom: 14rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expert_focus_btn {
+    font-size: 24rpx;
+    color: #fff;
+    line-height: 24rpx;
+}
+.expert_focus_number {
+    font-size: 22rpx;
+    color: #000;
+}
+.expert_info_bottomBox {
+    font-size: 28rpx;
+    line-height: 46rpx;
+    color: #000;
+}
+.expert_info_tag{
+    color: #E84025;
+    border-width: 1rpx;
+    border-style: solid;
+    border-color:#E84025;
+    display: inline-block;
+    margin-right: 20rpx;
+    font-size: 24rpx;
+    line-height: 28rpx;
+    box-sizing: border-box;
+    border-radius: 4rpx;
+    padding: 5rpx 10rpx;
+}
+.expert_title{
+  margin: 24rpx;
+  color: #333;
+  font-size: 28rpx;
+}
+.expert_title_H2{
+  padding: 20rpx;
+  text-align: center;
+  font-size: 32rpx;
+  display: block;
+  font-weight: bold
+}
+.expert_title_mess{
+  line-height: 1.5;
+}
+.list1s{
+    box-sizing:border-box;
+    background-color:#fff;
+    margin:0 24rpx 24rpx;
+    padding:24rpx;
+    border-radius:10rpx;
+    box-shadow:0 1rpx 20rpx 0 rgba(215,215,215,0.32);
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+}
+.listTit{
+    color:#000;
+    font-size: 24rpx;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border_rigth{
+    display: inline-block;
+    padding-right: 20rpx;
+    margin-right: 20rpx;
+    border-right: 1rpx #999 solid;
+}
+.list-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 40rpx 0;
+}
+.list-box text{
+    font-size: 24rpx;
+    color: #000;
+    margin: 0 24rpx;
+}
+.list-box image{
+    width: 86rpx;
+    height: 86rpx;
+    border-radius: 50%;
+}
+.list-box .vs-font{
+    font-size: 48rpx;
+    margin: 0 40rpx;
+}
+.team_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plan-type .plans_ul{
+    position: relative;
+}
+.plan-type .plans_li{
+   font-size:24rpx;
+    box-sizing: border-box;
+    float: left;
+    color: #000;
+    height: 70rpx;
+    line-height: 34rpx;
+    text-align: center;
+    /* border: 1px rgb(255,33,65) solid; */
+    background: #F8F8F8;
+    width: 25%;
+}
+.plan-type .plans_li:nth-child(1){
+    width: 23%;
+    margin-right: 2%;
+}
+.plan-type text.stuta_sure{
+    right: -20rpx;
+    top: -10rpx;
+    position: absolute;
+    z-index: 3;
+    width: 56rpx;
+    height: 56rpx;
+   /* background: url(../../libs/image/stuta_sure.png) 0 0 no-repeat;
+    -webkit-background-size: .56rem auto;
+    background-size: .56rem auto;*/
+}
+.plan-type text.stuta_no{
+    right: -20rpx;
+    top: -10rpx;
+    position: absolute;
+    z-index: 3;
+    width: 56rpx;
+    height: 56rpx;
+   /* background: url(../../libs/image/stuta_no.png) 0 0 no-repeat;
+    -webkit-background-size: .56rem auto;
+    background-size: .56rem auto;*/
+}
+.plan-type .plans_p{
+    display: block;
+}
+.plan-type .plans_li:nth-child(1) .plans_p{
+    line-height:70rpx;
+}
+.plan-type .lh38 .plans_p{
+     line-height:34rpx !important;
+}
+.hide{
+    display: none;
+}
+.p20{
+    padding: 26rpx;
+    margin-bottom: 140rpx;
+}
+.p20 image {
+    width: 100%;
+    height: 250rpx;
+}
+.plan-type .plans_ul .plans_li_hover {
+    background: #ADA4A4;
+    -webkit-background-size: 25rpx auto;
+    background-size: 25rpx auto;
+    position: relative;
+}
+.hotDetail_tit{
+    text-align: center;
+    margin-bottom: 28rpx; 
+}
+.hotDetail_tit_img{
+    width: 336rpx;
+    height: 29rpx;
+}
+
+
+.buy-stuta{
+    position: relative;
+}
+.buy-stuta .bg{
+    background-color: #fff;
+    padding: 50rpx;
+    margin:24rpx 24rpx 130rpx;
+}
+.bg_p{
+    display: block;
+    text-align: center;
+    line-height: 2;
+    font-size: 24rpx;
+    color: rgb(51, 51, 51);
+}
+.text-c{
+    text-align: center;
+    font-size: 24rpx;
+    color: rgb(51, 51, 51);
+}
+.buy-stuta .foot{
+    position:fixed;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(44,46,52,1);
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.foot .pay-btn{
+    width: 270rpx;
+    height: 100rpx;
+    background-color: rgba(241,45,63,1);
+    font-size: 36rpx;
+    text-align: center;
+    line-height: 100rpx;
+    color: #fff;
+}
+.foot .foot_p{
+    flex: 1;
+    color:#fff;
+    font-size: 32rpx;
+    text-align: center;
+}
+.foot_text{
+    flex:1;
+    font-size: 32rpx;
+    color: #fff;
+    text-align: center;
+}
+.lists2 .table{
+    margin: 0 24rpx;
+    background-color: rgb(54,56,60);
+    border-collapse:collapse;
+}
+.lists2 .table .th,.lists2 .table .tr{
+    display: flex;
+    justify-content: space-around;
+}
+.lists2 .table text{
+    color: #fff;
+    flex: 1;
+    font-size: 24rpx;
+    padding: 30rpx 0;
+    text-align: center;
+    border: 1px rgb(44,46,52) solid;
+}
+.lists2 .table .th_text_txt{
+    position: absolute;
+    padding: 0;
+    border:none;
+    left: 50%;
+    top:50%;
+    width: 30rpx;
+    height: 30rpx;
+    overflow: hidden;
+    margin-left: -15rpx;
+    margin-top:-15rpx;
+}
+.lists2 .table .th_text{
+    position: relative;
+    font-weight: bold;
+    color: rgba(255,255,255,0.4);
+}
+.lists2 .table .text{
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+}
+.lists2 .table .color_red text{
+    color: #F12D3F;
+}
+.lists2 .table .color_red text:nth-child(1){
+    color: rgba(255,255,255,0.4);
+}

@@ -1,0 +1,57 @@
+<block wx:if='{{ _type == "all" ||  _type == "hit" ||  _type == "lznum"}}'>
+  <view class="main_list">
+      <navigator class="main_list_header" url="../mjDetail/index?cauthorid={{_item.cauthorid}}">
+        <view class="list_user_icon">
+          <block wx:if='{{_index == 0}}'><image src="../../libs/image/icon1.png"></image></block>
+          <block wx:if='{{_index == 1}}'><image src="../../libs/image/icon2.png"></image></block>
+          <block wx:if='{{_index == 2}}'><image src="../../libs/image/icon3.png"></image></block>
+          <block wx:if='{{_index > 2}}'><text>{{_index+1}}</text></block>
+        </view>
+        <image class="list_user_img" src='{{_item.authheadImlUrl}}'></image>
+        <view class="list_user_info">
+          <text class="user_info_name">{{_item.authName}}</text>
+          <text class="user_info_saleNum">在售方案：{{_item.explans}}</text>
+        </view>
+        <block wx:if='{{_type == "hit"}}'>
+          <view class="list_user_change">
+          <text class="list_user_change_tit">{{_item.profit}}</text>
+          <text class="list_user_change_tit_sup">%</text>
+          <text class="list_user_change_p">命中率</text>
+        </view>
+        </block>
+        <block wx:if='{{_type == "lznum"}}'>
+          <view class="list_user_change">
+          <text class="list_user_change_tit">{{_item.lznum}}</text>
+          <text class="list_user_change_p">连红</text>
+        </view>
+        </block>
+        <!--0 没有关注-->
+        <block wx:if="{{attentionState == 0}}">
+          <view class="list_user_right" catchtap='handleAttention'>关注</view>
+        </block>
+        <!--1 已关注-->
+        <block wx:if="{{attentionState == 1}}">
+          <view class="list_user_right hadAttention" catchtap='handleAttention'>已关注</view>
+        </block>
+      </navigator>
+    </view>
+</block>
+<block wx:if='{{ _type =="attention"}}'>
+  <view class="main_list">
+      <navigator class="main_list_header" url="../mjDetail/_index?cauthorid={{_item.cauthorid}}">
+        <image class="list_user_img" src='{{_item.imgurl}}'></image>
+        <view class="list_user_info">
+          <text class="user_info_name">{{_item.authName}}</text>
+          <view class="user_info_tagList">
+            <text>{{_item.authTag}}</text>
+            <text>{{"近"+_item.allnum + "中"+ _item.hitnum}}</text>
+            <text wx:if='{{ _item.lznum >=2 }}'>{{_item.lznum +"连红"}}</text>
+          </view>
+        </view>
+        <view class="list_user_right_txt">
+          <text class='list_user_right_txt_tit'>{{_item.explans}}</text>
+          <text class='list_user_right_txt_mess'>在售方案</text>
+        </view>
+      </navigator>
+    </view>
+</block>

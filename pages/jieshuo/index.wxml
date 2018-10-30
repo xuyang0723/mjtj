@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<import src="/templates/lists/index.wxml"/>
+<view>
+   <view class="header_box">
+    <view class="main_header_box">
+        <view class="main_header_title" bindtap="handlChangePlaytype" data-playtype="0">
+            <text class="main_header_title_text">全部</text>
+            <text class='{{playtype == 0?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+        <view class="main_header_title" bindtap="handlChangePlaytype" data-playtype="1">
+            <text class="main_header_title_text">竞足</text>
+            <text class='{{playtype == 1?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+        <view class="main_header_title" bindtap="handlChangePlaytype" data-playtype="2">
+            <text class="main_header_title_text">竞篮</text>
+            <text class='{{playtype == 2?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+        <view class="main_header_title" bindtap="handlChangePlaytype" data-playtype="3">
+            <text class="main_header_title_text">胜负彩</text>
+            <text class='{{playtype == 3?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+        <view class="main_header_title" bindtap="handlChangePlaytype" data-playtype="4">
+            <text class="main_header_title_text">任选九</text>
+            <text class='{{playtype == 4?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+    </view>
+    <view class="main_header_box_name">
+        <view class="main_header_title_name" bindtap="handlChangeName" data-name=''>
+            <text class="main_header_title_text">人气</text>
+            <text class='{{name === ""?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+        <view class="main_header_title_name" bindtap="handlChangeName" data-name='profit'>
+            <text class="main_header_title_text">命中率</text>
+            <text class='{{name === "profit"?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+        <view class="main_header_title_name" bindtap="handlChangeName" data-name='dh'>
+            <text class="main_header_title_text">带红人数</text>
+            <text class='{{name === "dh"?"redLine redLine_choose":"redLine"}}'></text>
+        </view>
+    </view>
+</view>
+<view class="content">
+    <view class="lists" animation="{{animationData}}">
+		<block wx:if="{{planList.length != 0}}">
+	        <template wx:for="{{planList}}" wx:key='index' wx:for-item='item' is="listData" data='{{ item,currentStatue,buytime}}'></template>
+	    </block>
+	    <block wx:if='{{planList.length == 0}}'>
+	        <view class='nodata'><image src='../../libs/image/nodata.png'></image></view>
+	    </block>
+    </view>
+</view>
+</view>

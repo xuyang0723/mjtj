@@ -1,0 +1,49 @@
+<wxs module='filter' src="../../utils/filter.wxs"></wxs>
+<template name="mjlistData">
+  <view class='hotCommentary_list_box_item'>
+    <view class='hotCommentary_list'>
+      <!--已完赛的状态-->
+      <block wx:if='currentStatue == 3'>
+        <!--已中-->
+        <block wx:if='{{item.won == 1}}'><image class="floatImgHit" src='../../libs/image/hit_icon.png'></image></block>
+        <!--未中-->
+        <block wx:if='{{item.won == 2}}'><image class="floatImgMiss" src='../../libs/image/miss_icon.png'></image></block>
+      </block>
+      <view class='hotCommentary_list_centerBox'>
+        <navigator url='../jsDetail/index?planNo={{item.projid}}'>
+          <view class='hotCommentary_title'>
+              {{item.plantitle}}
+          </view>
+          <view class='hotCommentary_content_box'>
+              <view 
+                class='hotCommentary_content_list' 
+                wx:for='{{item.matches}}'
+                wx:key='index'
+                wx:for-item='items'
+                >
+                
+                  <text class='hotCommentary_content_list_date'>{{filter.getMatcheTime(items.matchTime)}}</text>
+                  <text class='hotCommentary_content_list_belong'>{{items.leagueName}}</text>
+                  <text class='hotCommentary_content_list_teams'>{{items.homeTeam}}VS{{items.guestTeam}}</text>
+              </view>
+          </view>
+        </navigator>
+      </view>
+      <view class='hotCommentary_list_bottomBox'>
+          <view class='hotCommentary_list_bottomBox_state'>
+            <!--购买时间-->
+            <block wx:if='{{ buytime == 1}}'>
+               <text class='hotCommentary_list_push'>购买时间：{{filter.getMatcheTime(item.publishDate)}}</text>
+            </block>
+            <!--发布时间-->
+            <block wx:if='{{ buytime == 0 }}'>
+              <text class='hotCommentary_list_push'>{{item.publishDate}}发布</text>
+            </block>
+             
+              <text class='hotCommentary_list_state'>{{filter.typetxt(item.timeType)}}</text>
+          </view>
+          <text class='hotCommentary_list_price'>¥{{item.salepeice}}</text>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,74 @@
+var dataFormat = {
+  stringFun:function(str,pos,fgf) {
+    var fgfs = fgf ? fgf :',';
+    var arr = str.split(fgfs)
+    if (pos == '[]') {
+    	return arr
+    }
+    return arr[pos]
+  },
+  classFun:function(ZW){
+  	var tagClass=''
+  	 switch(ZW)
+      {
+      case "专业玩家":
+        tagClass = 'zywj'
+        break;
+      case "彩票分析师":
+        tagClass = 'cpfxs'
+        break;
+      case "媒体名记":
+        tagClass = 'mtmj'
+        break;
+        case "社区名人":
+        tagClass = 'sqmr'
+        break;
+        case "TV大咖":
+        tagClass = 'TVdk'
+        break;
+      default:
+        tagClass = 'zqmj'
+      }
+      return tagClass
+  },
+  releaseTime:function(item){
+    if (item.adddate) {
+      var time = item.adddate;
+      var Exp = getRegExp("-","g");
+      var gsTime =time.replace(Exp,'/');
+      var intDiff =(getDate() - getDate(gsTime)) / 1000; 
+      var hour = Math.floor(intDiff / (60 * 60));  
+      var minute = Math.floor(intDiff / 60) - (hour * 60);
+      var addTime = hour>=1?hour+"小时前":minute+"分钟前";   
+      return addTime
+    }else if (item.publishDate) {
+      return item.publishDate
+    }else{
+      return ''
+    }
+  },
+  typetxt:function (timeType) {
+  	var timeTypetxt = '';
+    switch (timeType) {
+      case "1":
+        timeTypetxt = '未开赛';
+        break;
+      case "2":
+        timeTypetxt = '比赛中';
+        break;
+      default:
+        timeTypetxt = '已完赛';
+    };
+    return timeTypetxt;
+  },
+  getMatcheTime:function(time){
+  	return time.slice(5,16);
+  }
+}
+module.exports = {
+  stringFun: dataFormat.stringFun,
+  classFun:dataFormat.classFun,
+  releaseTime:dataFormat.releaseTime,
+  typetxt:dataFormat.typetxt,
+  getMatcheTime:dataFormat.getMatcheTime
+}

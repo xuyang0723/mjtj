@@ -1,0 +1,106 @@
+.main_list navigator{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 702rpx;
+    padding: 20rpx;
+    background-color: #fff;
+    box-shadow:2px 0px 20px 0px rgba(221,221,221,0.5);
+    border-radius:10rpx;
+    margin-bottom: 20rpx;
+    display: flex;
+    align-items: center;
+}
+.list_user_icon{
+  width: 51rpx;
+  height: 65rpx;
+  margin-right: 32rpx;
+}
+.list_user_icon image{
+  width: 51rpx;
+  height: 65rpx;
+}
+.list_user_icon text{
+  display: block;
+  font-size: 24rpx;
+  color: #333;
+  text-align: center;
+  line-height: 65rpx;
+}
+.list_user_img{
+  width:71rpx;
+  height: 71rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+.list_user_info{
+  flex: 1;
+}
+.user_info_name{
+  font-size: 28rpx;
+  color: #333;
+  display: block
+}
+.user_info_tagList text{
+    color: #E84025;
+    border-width: 1rpx;
+    border-style: solid;
+    border-color:#E84025;
+    display: inline-block;
+    margin-right: 10rpx;
+    font-size: 24rpx;
+    line-height: 28rpx;
+    box-sizing: border-box;
+    border-radius: 4rpx;
+    padding: 0rpx 10rpx;
+}
+.user_info_saleNum{
+  font-size: 22rpx;
+  color: #999;
+}
+.list_user_right{
+  position: absolute;
+  right: 20rpx;
+  width:120rpx;
+  height:46rpx;
+  background:rgba(232,64,37,1);
+  border-radius:23px;
+  font-size:24rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 46rpx; 
+}
+.hadAttention{
+  background: #E99486;
+}
+.list_user_right_txt{
+  position: absolute;
+  right: 20rpx;
+}
+.list_user_right_txt_tit,.list_user_change_tit{
+  display: block;
+  text-align: right;
+  font-size: 44rpx;
+  color: #E84025;
+}
+.list_user_right_txt_mess,.list_user_change_p{
+  display: block;
+  font-size: 20rpx;
+  color: #333;
+   text-align: right;
+}
+.list_user_change_tit,.list_user_change_p{
+  text-align: center
+}
+.list_user_change_tit_sup{
+  position: absolute;
+  top: 7rpx;
+  right: -10rpx;
+  font-size:18rpx;
+  color:#FF1A31;
+}
+.list_user_change{
+  position: relative;
+  width:80rpx;
+  margin-right: 180rpx;
+}

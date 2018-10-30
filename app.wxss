@@ -1,0 +1,27 @@
+/**app.wxss**/
+page {
+    font-family:PingFangSC-Medium;
+    background-color: #F8F8F8;
+}
+.redLine {
+    width:80%;
+    margin:0 auto;
+    height:4rpx;
+    border-radius:4px;
+}
+.redLine_choose {
+    background:rgba(229,25,25,1);
+}
+.redLine_choose_name {
+    background:rgba(229,25,25,1);
+}
+.nodata{
+    height: 298rpx !important;
+    padding: 0.64rem 0px;
+}
+.nodata image{
+    display: block;
+    width: 262rpx;
+    height: 298rpx;
+    margin: auto;
+}

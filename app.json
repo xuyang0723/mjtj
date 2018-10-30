@@ -1,0 +1,23 @@
+{
+    "pages": [
+        
+        "pages/index/index",
+        "pages/bangdan/index",
+        "pages/findPassword/index",
+        "pages/jieshuo/index",
+        "pages/jsDetail/index",
+        "pages/loginPassword/index",
+        "pages/loginPhone/index",
+        "pages/mjDetail/index",
+        "pages/myPlan/index",
+        "pages/pageLists/index",
+        "pages/registerPassword/index",
+        "pages/registerPhone/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    }
+}
